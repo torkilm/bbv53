@@ -28,3 +28,18 @@ section.container-fluid img {
   border-style: solid;
   border-width: 0px;
 }
+section.hero {
+  padding: 28px 0px;
+  background: url('/assets/images/nattfoto_fasade.jpg') no-repeat center center;
+  background-size: cover;
+}
+section.hero .jumbotron {
+  background-color: rgba(0,0,0,0.4);
+}
+section.hero .jumbotron h1,
+section.hero .jumbotron p {
+  color: white;
+}
+section.hero .jumbotron p {
+
+}
