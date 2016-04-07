@@ -21,9 +21,7 @@ section.container-fluid {
   padding-top: 5px;
   width: 100%;
 }
-section.container-fluid img {
-  width: 100%;
-}
+
 #meglerinfo {
   border-style: solid;
   border-width: 0px;
@@ -42,4 +40,7 @@ section.hero .jumbotron p {
 }
 section.hero .jumbotron p {
 
+}
+instalist a {
+  margin-bottom: 12px;
 }
