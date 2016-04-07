@@ -28,7 +28,7 @@ section.container-fluid {
 }
 section.hero {
   padding: 28px 0px;
-  background: url('assets/images/nattfoto_fasade.jpg') no-repeat center center;
+  background: url('../assets/images/nattfoto_fasade.jpg') no-repeat center center;
   background-size: cover;
 }
 section.hero .jumbotron {
