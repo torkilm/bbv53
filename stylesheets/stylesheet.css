@@ -1,12 +1,7 @@
 
-section.container-fluid {
+section.insta {
   padding-top: 5px;
   width: 100%;
-}
-
-#meglerinfo {
-  border-style: solid;
-  border-width: 0px;
 }
 section.hero {
   padding: 28px 0px;
@@ -29,12 +24,15 @@ section.matterport {
 instalist a {
   margin-bottom: 12px;
 }
-section.visning {
+.visning {
   background-color: #4e946d;
+  color: #ffffff;
+}
+.visible-xs.visning a {
+  color: #000000;
 }
 section.visning .tidspunkt {
   font-size: 3em;
-  color: #ffffff;
   margin-top: 10px;
 }
 section.megler {
@@ -47,7 +45,9 @@ section.megler {
 }
 .meglerinfo {
     background-color: #ffffff;
+    background-color: rgba(255,255,255,0.8);
     border-radius: 4px;
+    padding: 8px;
   }
 .btn-danger {
   background-color: #4e946d;

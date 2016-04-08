@@ -9,6 +9,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" href="../deling/deling.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.rurl }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bukken Bruses veg 53, 7056 Ranheim">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+
   </head>
   <body>
 
@@ -21,9 +33,14 @@
               <h1>Bukken Bruses veg 53</h1>
               <p>7056 Ranheim, Trondheim</p>
               <p>Lyst inn mørkt ut. Fint hus med kjøli trivelige naboer. Fin utsikt og artige lekeplasser.</p>
-              <p><a class="btn btn-danger btn-lg" href="#" role="button">Finn.no Annonse</a>
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Last ned prospekt</a>
-              </p>
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                  <p><a class="btn btn-danger btn-lg" href="http://m.finn.no/realestate/homes/ad.html?finnkode=73876839" role="button">Finn.no Annonse</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                  <p><a class="btn btn-primary btn-lg" href="https://hem.no/73876839/prospekt" role="button">Last ned prospekt</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -54,44 +71,46 @@
     <section>
       <div id="map"></div>
     </section>
+
     <section class="megler">
-    <div class="row">
-      <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 meglerinfo">
-          <h2>Kontakt</h2>
-          <p><h3>Morten Kvernland</h3></p>
-          <p><i>Eiendomsmegler MNEF, Partner</i></p>
-          <p><a href="tel:95042501" title="Ring Megler"><i class="fa fa-mobile fa-2x"></i> 950 42 501</a></p>
-          <p><a href="mailto:morten.kvernland@hem.no" title="Sen epost til megler"><i class="fa fa-envelope fa-lg"></i> morten.kvernland@hem.no</a></p>
-          <p><a href="https://hem.no/kontakt/MK" title="Info om Megler"><i class="fa fa-info-circle fa-lg"></i> Om Megler</a></p>
+      <div class="container-fluid hidden-xs">
+        <div class="row">
+          <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+            <div class="meglerinfo">
+              <h2>Megler</h2>
+              <p><h3>Morten Kvernland</h3></p>
+              <p><i>Eiendomsmegler MNEF, Partner</i></p>
+              <p><a href="tel:95042501" title="Ring Megler"><i class="fa fa-mobile fa-2x"></i> 950 42 501</a></p>
+              <p><a href="mailto:morten.kvernland@hem.no" title="Sen epost til megler"><i class="fa fa-envelope fa-lg"></i> morten.kvernland@hem.no</a></p>
+              <p><a href="https://hem.no/kontakt/MK" title="Info om Megler"><i class="fa fa-info-circle fa-lg"></i> Om Megler</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Megler
-    <section class="container-fluid megler">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" id="meglerinfo">
-          <h2>Megler</h2>
-          <img src="assets/images/morten-kvernland-big.jpg" class="img-responsive" alt="Image">
-          <p><h3>Morten Kvernland</h3></p>
-          <p><i>Eiendomsmegler MNEF, Partner</i></p>
-          <p><a href="tel:95042501" title="Ring Megler">950 42 501</a>
-          / <a href="mailto:morten.kvernland@hem.no" title="Sen epost til megler">morten.kvernland@hem.no</a> /
-          <a href="https://hem.no/kontakt/MK" title="Info om Megler">Om Megler</a></p>
+    <div class="container-fluid visible-xs visning">
+        <div class="row">
+          <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+            <div>
+              <h2>Megler</h2>
+              <p><h3>Morten Kvernland</h3></p>
+              <p><i>Eiendomsmegler MNEF, Partner</i></p>
+              <p><a href="tel:95042501" title="Ring Megler"><i class="fa fa-mobile fa-2x"></i> 950 42 501</a></p>
+              <p><a href="mailto:morten.kvernland@hem.no" title="Sen epost til megler"><i class="fa fa-envelope fa-lg"></i> morten.kvernland@hem.no</a></p>
+              <p><a href="https://hem.no/kontakt/MK" title="Info om Megler"><i class="fa fa-info-circle fa-lg"></i> Om Megler</a></p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    -->
-
     <!-- InstaList -->
-    <section class="container-fluid">
+    <section class="container-fluid insta">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2 class="text-center">Siste bilder fra #ranheim</h2>
+          <h2 class="text-center">Siste bilder fra #grilstadpark</h2>
         </div>
         <instalist
         access-token="2272244284.8987303.c38e73d28f274412a6af2eccc84ad7e9"
-        source="#ranheim"
+        source="#grilstadpark"
         hashtags=""
         count="12"
         size="low"
@@ -101,17 +120,15 @@
         </instalist>
       </div>
     </section>
+
     <!--deling.js -->
     <section class="text-center social">
       <p>Del boligen med dine venner og bekjente</p>
       <div class="deling" data-networks="facebook,twitter,pinterest,google-plus,mail"></div>
     </section>
-    <section>
-
 
     <!-- Google Maps -->
-    </section>
-        <script>
+    <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
@@ -125,11 +142,10 @@
           map: map,
           icon: iconBase + 'homegardenbusiness.png'
         });
-        <!-- https://www.google.no/maps/place/63%C2%B025'46.4%22N+10%C2%B030'18.9%22E/@63.429567,10.503058,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=no -->
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
     <script src="instalist.js"></script>
     <script src="../deling/deling.min.js"></script>
@@ -141,7 +157,6 @@
 
       ga('create', 'UA-53601108-8', 'auto');
       ga('send', 'pageview');
-
     </script>
   </body>
 </html>
