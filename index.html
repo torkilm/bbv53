@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" href="../deling/deling.min.css">
   </head>
   <body>
 
@@ -32,24 +33,32 @@
     <section class="visning">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p class="tidspunkt text-center">Visning</p>
-          <p class="tidspunkt text-center">Onsdag 20.04.16 kl 18.00</p>
+          <p class="tidspunkt text-center">Visning</p>
+          <p class="tidspunkt text-center">Onsdag 20.04.16</p>
+          <p class="tidspunkt text-center">kl 18.00 - 19.00</p>
         </div>
       </div>
     </section>
 
     <!-- Matterport -->
-    <section>
+    <section class="matterport">
       <iframe width="100%" height="600" src="https://my.matterport.com/show/?m=APDBhNTvYjY" frameborder="0" allowfullscreen></iframe>
     </section>
+    <!--deling.js -->
+    <section class="text-center social">
+    <p>Del boligen med dine venner og bekjente</p>
+      <div class="deling" data-networks="facebook,twitter,pinterest,google-plus,mail"></div>
+    </section>
     <!-- Google Maps -->
-
+    <section>
+      <div id="map"></div>
+    </section>
     <!-- Megler -->
-    <section class="container-fluid">
+    <section class="container-fluid megler">
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" id="meglerinfo">
           <h2>Megler</h2>
-          <img src="assets/images/morten-kvernland.png" class="img-responsive" alt="Image">
+          <img src="assets/images/morten-kvernland-big.jpg" class="img-responsive" alt="Image">
           <p><h3>Morten Kvernland</h3></p>
           <p><i>Eiendomsmegler MNEF, Partner</i></p>
           <p><a href="tel:95042501" title="Ring Megler">950 42 501</a>
@@ -65,7 +74,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h2 class="text-center">Siste bilder fra #ranheim</h2>
         </div>
-
         <instalist
         access-token="2272244284.8987303.c38e73d28f274412a6af2eccc84ad7e9"
         source="#ranheim"
@@ -76,14 +84,40 @@
         img-class="img-responsive"
         ng-app="Instalist">
         </instalist>
-        <p>Powered by Instalist by <a href="https://heimdalit.no" title="Heimdal IT">Heimdal IT</a></p>
       </div>
     </section>
-    <section>
-      <!--Add deling -->
+    <!--deling.js -->
+    <section class="text-center social">
+      <p>Del boligen med dine venner og bekjente</p>
+      <div class="deling" data-networks="facebook,twitter,pinterest,google-plus,mail"></div>
     </section>
+    <section>
+
+
+    <!-- Google Maps -->
+    </section>
+        <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 63.429567, lng: 10.503058},
+          zoom: 14
+        });
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var marker = new google.maps.Marker({
+          position: {lat: 63.429548, lng: 10.505254},
+          size: 1,
+          map: map,
+          icon: iconBase + 'homegardenbusiness.png'
+        });
+        <!-- https://www.google.no/maps/place/63%C2%B025'46.4%22N+10%C2%B030'18.9%22E/@63.429567,10.503058,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=no -->
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
     <script src="instalist.js"></script>
+    <script src="../deling/deling.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

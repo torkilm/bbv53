@@ -41,6 +41,9 @@ section.hero .jumbotron p {
 section.hero .jumbotron p {
 
 }
+section.matterport {
+  line-height: 0px;
+}
 instalist a {
   margin-bottom: 12px;
 }
@@ -56,3 +59,22 @@ section.visning .tidspunkt {
   background-color: #4e946d;
   border-color: #4e946d;
 }
+#map {
+  height: 400px;
+}
+.deling {
+  font-size: 2.9em;
+}
+.deling-icon {
+    margin-right: .5em;
+    border-radius: 2px;
+    padding: 4px;
+    width: 32px;
+    text-align: center;
+    display: inline-block;
+  }
+  .social {
+    background-color: #4e946d;
+    color: #ffffff;
+    padding-bottom: 6px;
+  }
