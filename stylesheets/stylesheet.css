@@ -44,3 +44,15 @@ section.hero .jumbotron p {
 instalist a {
   margin-bottom: 12px;
 }
+section.visning {
+  background-color: #4e946d;
+}
+section.visning .tidspunkt {
+  font-size: 3em;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.btn-danger {
+  background-color: #4e946d;
+  border-color: #4e946d;
+}
