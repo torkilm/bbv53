@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Gratulerer med dagen!</h1>
+          <p>Du skal nå gjennom en liten rebus!</p>
+          <p>Følg instruksjonene og du vil finne koder for å komme deg videre.</p>
+          <p>Vi hjelper deg med den første, Elise</p>
+        </div>
+      </div>
+    </div>
+
+    <form action="javascript:doForm()">
+      <input type="password" id="inputField">
+      <button type="submit">PRØV</button>
+    </form>
+    <div id="hidden" class="hidden">
+    <a class="btn btn-default" href="/elise30år/1/" role="button">Neste</a>
+    </div>
+    <script type="text/javascript">
+      var correct = 'Elise';
+      var doForm = function () {
+        var password = document.getElementById('inputField').value;
+        document.getElementById('hidden').className = correct === password ? '' : 'hidden';
+      };
+    </script>
+
+  </body>
+</html>

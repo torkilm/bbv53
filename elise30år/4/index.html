@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+      .img-responsive {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/assets/keep-calm-your-the-best-mum-ever.png" class="img-responsive" alt="Image">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Godt jobbet!</h1>
+          <p>Som mamma er du best i verden!</p>
+          <p>Og du passer på oss på ferden.</p>
+          <p>Vi elsker deg over alt på jord.</p>
+          <p>du er vår super-mor!!!</p>
+
+        </div>
+      </div>
+    </div>
+
+    <form action="javascript:doForm()">
+      <input type="password" id="inputField">
+      <button type="submit">PRØV</button>
+    </form>
+    <div id="hidden" class="hidden">
+    <a class="btn btn-default" href="/elise30år/5/" role="button">Neste</a>
+    </div>
+    <script type="text/javascript">
+      var correct = 'Elise';
+      var doForm = function () {
+        var password = document.getElementById('inputField').value;
+        document.getElementById('hidden').className = correct === password ? '' : 'hidden';
+      };
+    </script>
+
+  </body>
+</html>

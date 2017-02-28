@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Godt jobbet!</h1>
+          <p>Du er kjæresten min, og utrolig fin.</p>
+          <p>Jeg elsker deg så utrolig høyt,</p>
+          <p>håper ikke rebus var for drøyt.</p>
+
+          <p>Klarer du å finne den siste kode?</p>
+          <p>Du må nok klø deg i hode.</p>
+
+          <p>Det lyser og blinker og er hverdagen min,</p>
+          <p>du forstår det ikke,</p>
+          <p>men det gir deg nett på telefonen din.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <form action="javascript:doForm()">
+      <input type="password" id="inputField">
+      <button type="submit">PRØV</button>
+    </form>
+    <div id="hidden" class="hidden">
+    <a class="btn btn-default" href="/elise30år/6/" role="button">Neste</a>
+    </div>
+    <script type="text/javascript">
+      var correct = 'Elise';
+      var doForm = function () {
+        var password = document.getElementById('inputField').value;
+        document.getElementById('hidden').className = correct === password ? '' : 'hidden';
+      };
+    </script>
+
+  </body>
+</html>
