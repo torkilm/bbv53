@@ -11,6 +11,9 @@
       .hidden {
         display: none;
       }
+      body {
+        background-color: lightpink;
+      }
     </style>
   </head>
   <body>
@@ -41,7 +44,7 @@
     <a class="btn btn-default" href="/elise30år/6/" role="button">Neste</a>
     </div>
     <script type="text/javascript">
-      var correct = 'du er fantastisk';
+      var correct = 'vi elsker deg';
       var doForm = function () {
         var password = document.getElementById('inputField').value;
         document.getElementById('hidden').className = correct === password ? '' : 'hidden';
