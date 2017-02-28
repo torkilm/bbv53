@@ -11,6 +11,9 @@
       .hidden {
         display: none;
       }
+      .img-responsive {
+        max-width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -34,7 +37,7 @@
     <a class="btn btn-default" href="/elise30år/4/" role="button">Neste</a>
     </div>
     <script type="text/javascript">
-      var correct = 'Elise';
+      var correct = 'fantastisk husmor';
       var doForm = function () {
         var password = document.getElementById('inputField').value;
         document.getElementById('hidden').className = correct === password ? '' : 'hidden';
